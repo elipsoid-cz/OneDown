@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: brew install xcodegen create-dmg
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build & Archive
+        run: |
+          xcodebuild archive \
+            -project OneDown.xcodeproj \
+            -scheme OneDown \
+            -configuration Release \
+            -archivePath build/OneDown.xcarchive \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=YES | xcpretty
+
+      - name: Export app
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath build/OneDown.xcarchive \
+            -exportPath build/export \
+            -exportOptionsPlist scripts/ExportOptions.plist
+
+      - name: Create DMG
+        run: |
+          create-dmg \
+            --volname "OneDown" \
+            --window-size 540 380 \
+            --icon-size 128 \
+            --icon "OneDown.app" 140 190 \
+            --app-drop-link 400 190 \
+            "build/OneDown-${{ github.ref_name }}.dmg" \
+            "build/export/"
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/OneDown-${{ github.ref_name }}.dmg
+          generate_release_notes: true

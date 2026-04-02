@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ABD5253A51B03C14DEAED2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683EC717C02C2D175D6EB20 /* ContentView.swift */; };
+		8C726E0EE9C5C638B380B542 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51562FA327E2CD27A842452 /* FinderSync.swift */; };
+		901A46803633642C2E46774A /* OneDownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20C502D1D92120F776609F /* OneDownApp.swift */; };
+		927D2E2774D0F3459BF40EE7 /* OneDownExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8F61E8D5285FB9126BC4CDA /* OneDownExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B28B8686D944CA2B3C56C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F718143D59E592D83AEBBF7A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80668ECC392A1E3AF38D563B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27BDC7E3A41540E4A7EA190A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B8E5D3CF9B4EBD98E8EB74F;
+			remoteInfo = OneDownExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5389F76DF308866CAA69EFDD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				927D2E2774D0F3459BF40EE7 /* OneDownExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3264E9DB52BF00AD6FC3C364 /* OneDownExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneDownExtension.entitlements; sourceTree = "<group>"; };
+		3296DABEBA1CB241D71966E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B683EC717C02C2D175D6EB20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D43D21BD8DA4A95264009BB1 /* OneDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA20C502D1D92120F776609F /* OneDownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDownApp.swift; sourceTree = "<group>"; };
+		E3C422CBFF243C6C913825D8 /* OneDown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneDown.entitlements; sourceTree = "<group>"; };
+		F07C57B635CC1F57394C0507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F51562FA327E2CD27A842452 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		F718143D59E592D83AEBBF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8F61E8D5285FB9126BC4CDA /* OneDownExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneDownExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3DA48DAD52B02441C51F83FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D43D21BD8DA4A95264009BB1 /* OneDown.app */,
+				F8F61E8D5285FB9126BC4CDA /* OneDownExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F76A1B71513DA1D88866F0A /* OneDown */ = {
+			isa = PBXGroup;
+			children = (
+				F718143D59E592D83AEBBF7A /* Assets.xcassets */,
+				B683EC717C02C2D175D6EB20 /* ContentView.swift */,
+				F07C57B635CC1F57394C0507 /* Info.plist */,
+				E3C422CBFF243C6C913825D8 /* OneDown.entitlements */,
+				DA20C502D1D92120F776609F /* OneDownApp.swift */,
+			);
+			path = OneDown;
+			sourceTree = "<group>";
+		};
+		AEC31C3BF8CAE1508893D7AF = {
+			isa = PBXGroup;
+			children = (
+				7F76A1B71513DA1D88866F0A /* OneDown */,
+				F52CC1462E5130319B852055 /* OneDownExtension */,
+				3DA48DAD52B02441C51F83FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52CC1462E5130319B852055 /* OneDownExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F51562FA327E2CD27A842452 /* FinderSync.swift */,
+				3296DABEBA1CB241D71966E3 /* Info.plist */,
+				3264E9DB52BF00AD6FC3C364 /* OneDownExtension.entitlements */,
+			);
+			path = OneDownExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		889ACDDF9CB31C5F2312B2AA /* OneDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACBA401512292258FF50BF1 /* Build configuration list for PBXNativeTarget "OneDown" */;
+			buildPhases = (
+				4361387DF4129298E164BA85 /* Sources */,
+				13D2E12E9E3A4C6FADE4AF11 /* Resources */,
+				5389F76DF308866CAA69EFDD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D0936EE0C34CA126D196B5B /* PBXTargetDependency */,
+			);
+			name = OneDown;
+			packageProductDependencies = (
+			);
+			productName = OneDown;
+			productReference = D43D21BD8DA4A95264009BB1 /* OneDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B8E5D3CF9B4EBD98E8EB74F /* OneDownExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80725D77C506928678908356 /* Build configuration list for PBXNativeTarget "OneDownExtension" */;
+			buildPhases = (
+				78C739B3C4DFA66E7B7E5BDC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneDownExtension;
+			packageProductDependencies = (
+			);
+			productName = OneDownExtension;
+			productReference = F8F61E8D5285FB9126BC4CDA /* OneDownExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27BDC7E3A41540E4A7EA190A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					889ACDDF9CB31C5F2312B2AA = {
+						ProvisioningStyle = Automatic;
+					};
+					8B8E5D3CF9B4EBD98E8EB74F = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4B37D117A0DA70B8F0AFD6B /* Build configuration list for PBXProject "OneDown" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AEC31C3BF8CAE1508893D7AF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				889ACDDF9CB31C5F2312B2AA /* OneDown */,
+				8B8E5D3CF9B4EBD98E8EB74F /* OneDownExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13D2E12E9E3A4C6FADE4AF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28B8686D944CA2B3C56C85C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4361387DF4129298E164BA85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABD5253A51B03C14DEAED2D /* ContentView.swift in Sources */,
+				901A46803633642C2E46774A /* OneDownApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C739B3C4DFA66E7B7E5BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C726E0EE9C5C638B380B542 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D0936EE0C34CA126D196B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B8E5D3CF9B4EBD98E8EB74F /* OneDownExtension */;
+			targetProxy = 80668ECC392A1E3AF38D563B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A7F5ECD58463776E36E548F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneDownExtension/OneDownExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OneDownExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.onedown-app.OneDown.Extension";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		46417678F821A2477B952564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDown/OneDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OneDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.onedown-app.OneDown";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E6174C0D51F53F9FD5600B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		AB9CC2BAE7816263001F3855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDown/OneDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OneDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.onedown-app.OneDown";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC620D9431BECAA3181E9235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		F53FE9F311A45697C950B3AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneDownExtension/OneDownExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OneDownExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.onedown-app.OneDown.Extension";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80725D77C506928678908356 /* Build configuration list for PBXNativeTarget "OneDownExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53FE9F311A45697C950B3AB /* Debug */,
+				2A7F5ECD58463776E36E548F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BACBA401512292258FF50BF1 /* Build configuration list for PBXNativeTarget "OneDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46417678F821A2477B952564 /* Debug */,
+				AB9CC2BAE7816263001F3855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4B37D117A0DA70B8F0AFD6B /* Build configuration list for PBXProject "OneDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6174C0D51F53F9FD5600B2 /* Debug */,
+				DC620D9431BECAA3181E9235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27BDC7E3A41540E4A7EA190A /* Project object */;
+}
